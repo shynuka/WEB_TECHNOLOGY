@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAY YES TO THE DAY</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+        body {
+            background-color: rgb(181, 185, 125);
+            font-family: 'Times New Roman', Times, serif;
+            color: #fdfefd;
+            margin: 0;
+            padding: 0;
+        }
+        .solar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #title {
+            transform: scale(1.1);
+        }
+        h1 {
+            text-align: center;
+            margin: 0;
+            padding-top: 20px;
+        }
+        h3 {
+            text-align: center;
+            margin: 0;
+            padding: 10px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #404a08;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .button:hover {
+            background-color: #2c3406;
+        }
+    </style>
+</head>
+<body>
+    <h1>SAY YES TO THE DAY</h1>
+    <img src="wed.jpg" usemap="#wedding" alt="BRIDE AND GROOM" width="100%" />
+    <map name="wedding">
+        <area shape="rect" coords="901,809,1162,92" alt="BRIDE" href="https://en.wikipedia.org/wiki/Bride#Etymology" target="_blank" />
+        <area shape="rect" coords="524,50,828,750" alt="GROOM" href="https://en.wikipedia.org/wiki/Bridegroom" target="_blank" />
+        <area shape="rect" coords="170,815,542,150" href="https://www.easyweddings.com.au/" />
+        <area shape="rect" coords="151,846,467,176" href="https://www.easyweddings.com.au/" />
+    </map>
+    <div style="display: flex; justify-content: space-around; padding: 20px;">
+        <div style="border: 2px solid #000; padding: 10px; text-align: center;">
+            <img src="bride.jpg" alt="Bride" height="350px" style="margin: 0 10px;" />
+            <h5 style="text-align: center;">BRIDE</h5>
+            <h6 style="text-align: center;">BRIDAL ACCESSORIES</h6>
+            <a href="https://www.easyweddings.com.au/" class="button" target="_blank">CLICK TO KNOW MORE</a>
+        </div>
+        <div style="border: 2px solid #000; padding: 10px; text-align: center;">
+            <img src="groom.jpg" alt="Groom" height="350px" style="margin: 0 10px;" />
+            <h5 style="text-align: center;">GROOM</h5>
+            <h6 style="text-align: center;">GROOM ACCESSORIES</h6>
+            <a href="https://www.easyweddings.com.au/" class="button" target="_blank">CLICK TO KNOW MORE</a>
+        </div>
+    </div>
+</body>
+</html>
