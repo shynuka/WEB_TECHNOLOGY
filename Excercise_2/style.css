@@ -1,0 +1,42 @@
+
+.Container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: rgb(180, 188, 135);
+  }
+  
+  .Container > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+    border: 1px solid;
+    padding: 20px;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to left, #404a08, #1c1d02);
+  }
+  
+  .button {
+    --x: 50%;
+    --y: 50%;
+  
+    position: relative;
+    appearance: none;
+    padding: 1em 2em;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border-radius: 100px;
+  
+    border: 2px solid transparent;
+    background: linear-gradient(#f0efe6,#f0efe6,) padding-box,
+      radial-gradient(farthest-corner at var(--x) var(--y), #141701,#141701)
+        border-box;
+  }
+  
+  .name-price {
+    display: flex;
+    align-items: flex-end;
+    gap: 150px;
+  }
