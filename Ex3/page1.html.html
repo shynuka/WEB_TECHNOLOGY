@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAY YES TO THE DAY</title>
+    <link rel="stylesheet" href="./style(1).css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+</head>
+<body>
+    <header>
+        <div class="header-nav">
+            <ul class="header-buttons">
+                <li><a href="bride_dress.html" class="header-button">WEDDING DRESS</a></li>
+                <li><a href="#" class="header-button">ACCESSORIES</a></li>
+                <li><a href="#" class="header-button">FORMAL DRESS</a></li>
+            </ul>
+        </div>
+        <div class="header-others">
+            <div class="header-about">
+                <a href="#" class="header-button">About Us</a>
+            </div>
+            <a href="#" class="header-icon"><i class="fas fa-ellipsis-v"></i></a>
+            <div class="others-dropdown">
+                <a href="#">Sub-topic 1</a>
+                <a href="#">Sub-topic 2</a>
+                <a href="#">Sub-topic 3</a>
+            </div>
+        </div>
+        <div class="header-title">SAY YES TO THE DAY</div>
+        <div class="header-search">
+            <input type="text" placeholder="Say yes!!!!" class="search-input" />
+            <i class="search-icon"></i>
+        </div>
+        <div class="header-right">
+            <a href="#" class="header-icon"><i class="fas fa-user"></i></a>
+            <a href="#" class="header-icon"><i class="fas fa-shopping-cart"></i></a>
+            <a href="#" class="header-icon"><i class="fas fa-envelope"></i></a>
+        </div>
+    </header>
+    <img src="BACKGROUND.jpg" usemap="#wedding" alt="BRIDE AND GROOM" width="100%" class="image-fade background-animation" />    
+    <map name="wedding">
+        <area shape="rect" coords="901,809,1162,92" alt="BRIDE" href="https://en.wikipedia.org/wiki/Bride#Etymology" target="_blank" />
+        <area shape="rect" coords="524,50,828,750" alt="GROOM" href="https://en.wikipedia.org/wiki/Bridegroom" target="_blank" />
+        <area shape="rect" coords="170,815,542,150" href="https://www.easyweddings.com.au/" />
+        <area shape="rect" coords="151,846,467,176" href="https://www.easyweddings.com.au/" />
+    </map>
+</div>
+<div class="content-container">
+    <div class="content">
+        <img src="bride.webp" alt="Bride" height="800px"  class="image-fade background-animation" />
+        <h2>  WEDDING DRESS</h2>
+        <p>
+            Explore our latest bridal collection, designed to make your special day even more magical. From stunning wedding dresses to elegant accessories, our new collection has everything you need to create the perfect bridal look.
+        </p>
+        <a href="bride_dress.html" class="button" target="_blank">EXPLORE WEDDING DRESS</a>
+    </div>
+    <div class="content">
+        <img src="accesories.webp" alt="Bride" height="800px"  class="image-fade background-animation"  />
+        <h2> ACCESSORIES</h2>
+        <p>
+            Bride accessories are essential to complete a bride's wedding day look. These accessories add elegance and personality to the bridal ensemble, allowing brides to customize their look to match their style and wedding theme.
+        </p>
+        <a href="page(3).html" class="button" target="_blank">EXPLORE ACCESSORIES </a>
+    </div>
+    <div class="content">
+        <img src="FORMAL_DRESS.webp" alt="Bride" height="800px" class="image-fade background-animation"/>
+        <h2>  FORMAL DRESS</h2>
+        <p>
+            Formal dress at weddings typically refers to the attire worn by guests. Guests are expected to wear elegant and sophisticated clothing, often adhering to a dress code specified by the couple. 
+        </p>
+        <a href="page(4).html" class="button" target="_blank">EXPLORE FORMAL DRESS </a>
+    </div>
+</div>
+<div class="section" id="transformations">
+    <h2>BRIDAL SUPPLIES IN YOUR TIPS</h2>
+    
+    <p>Every bride's look is incomplete without the perfect dress and accessories, Choice of accessories reflects her unique style and personality, To introduce the radiant bridal dresses and exquisite accessories that will add an extra touch of elegance to our special day.From the delicately adorned veil that gracefully trails behind her, to the intricate lacework of her gloves that adds a touch of vintage charm, every detail has been thoughtfully chosen to complement her bridal gown and the theme of our celebration. As we prepare to witness the union of two hearts, let us take a moment to appreciate the bride and the exquisite accessories that enhance her beauty, her joy, and the significance of this day. Making bridal ensemble even more enchanting.</p>
+</div>
+<footer>
+    <p>&copy; 2023 SAY YES TO THE DAY. All rights reserved.</p>
+</footer>
+<script>
+    
+    // Select elements
+const othersDropdown = document.querySelector('.others-dropdown');
+const othersIcon = document.querySelector('.header-others .header-icon');
+
+// Toggle dropdown on icon click
+othersIcon.addEventListener('click', () => {
+    othersDropdown.classList.toggle('show-dropdown');
+});
+
+// Close dropdown when clicking outside the icon
+window.addEventListener('click', (event) => {
+    if (!event.target.matches('.header-icon')) {
+        if (othersDropdown.classList.contains('show-dropdown')) {
+            othersDropdown.classList.remove('show-dropdown');
+        }
+    }
+});
+
+// Function to add the "loaded" class to images when they finish loading
+function imagesLoaded() {
+    const images = document.querySelectorAll('img');
+    images.forEach((image) => {
+        if (image.complete) {
+            image.classList.add('loaded');
+        } else {
+            image.addEventListener('load', () => {
+                image.classList.add('loaded');
+            });
+        }
+    });
+}
+
+// Call the imagesLoaded function when the DOM is ready
+document.addEventListener('DOMContentLoaded', imagesLoaded);
+
+setTimeout(displayBackgroundImage, 5000);
+</script>
+</body>
+</html>

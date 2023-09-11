@@ -1,0 +1,60 @@
+/* General Styles */
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    color: #103a5a;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1 {
+    margin: 0;
+}
+
+p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Image Grid */
+.image-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.image-box {
+    text-align: center;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.image-box:hover {
+    transform: scale(1.1);
+}
+
+h5, h6 {
+    margin: 5px 0;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #05283d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #115582;
+}
